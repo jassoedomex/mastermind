@@ -9,3 +9,5 @@ from actions import change_pins
 from actions import select
 from actions import move
 from actions import correct
+print("Hellow, thankyou for trying our game, hope you enjoy it") 
+print ("Instructions")
