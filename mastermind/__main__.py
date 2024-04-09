@@ -22,5 +22,4 @@ with open('README.md', 'r') as f:
       exit()
     else :
       print("I did not understand this command.")
-      print("Here is the test list:" test_list)
-hello()
+     
