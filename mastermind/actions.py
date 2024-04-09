@@ -1,7 +1,8 @@
 def change_pins(color,location, board):
     pass
-def select(color,location, board)
+def select(color,location, board):
     pass
-def move (location, color, board)
+def move (location, color, board):
     pass
-def correct(code, win, lose, board)
+def correct(code, win, lose, board):
+    pass
