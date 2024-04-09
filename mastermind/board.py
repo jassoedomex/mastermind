@@ -1,13 +1,14 @@
-def create_new_board()
+def create_new_board():
     pass
-def number_of_lines(quantity, color)
+def number_of_lines(quantity, color):
     pass
-def number_of_holes(quantity, color)
+def number_of_holes(quantity, color):
     pass
-def number_of_tries(color)
+def number_of_tries(color):
     pass
-def code (win, lose)
+def code (win, lose):
     pass
-def you_won (screen)
+def you_won (screen):
     pass
-def you_lose(screen)
+def you_lose(screen):
+    pass
