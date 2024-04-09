@@ -9,5 +9,18 @@ from actions import change_pins
 from actions import select
 from actions import move
 from actions import correct
-print("Hellow, thankyou for trying our game, hope you enjoy it") 
-print ("Instructions")
+
+name = input("tell me your name")
+print("Nice to meet you", name)
+with open('README.md', 'r') as f:
+  print(f.read())
+  while True:
+    command = input ("Enter a command:")
+    if command == "hello":
+      hello()
+    elif command == "q":
+      exit()
+    else :
+      print("I did not understand this command.")
+      print("Here is the test list:" test_list)
+hello()
