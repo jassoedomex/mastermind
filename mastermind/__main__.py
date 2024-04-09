@@ -1,1 +1,11 @@
-from 
+from board.py import create_new_board
+from board.py import number_of_lines
+from board.py import number_of_holes
+from board.py import number_of_tries
+from board.py import code
+from board.py import you_won
+from board.py import you_lose
+from actions.py import change_pins
+from actions.py import select
+from actions.py import move
+from actions.py import correct
