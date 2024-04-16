@@ -15,11 +15,14 @@ name = input("tell me your name")
 print("Nice to meet you", name)
 with open('README.md', 'r') as f:
   print(f.read())
-  while True:
+board, verification = create_new_board()
+while True:
+    print_board(board, verification)
     command = input ("Enter a command:")
-    if command == "start":
-      create_new_board()
-    elif command == "q":
+    if command == "q":
       exit()
     else :
       print("I did not understand this command.")        
+
+
+
