@@ -12,9 +12,8 @@ def you_won (screen):
     pass
 def you_lose(screen):
     pass
-def erase():
-    pass
-print ("""
+def print_board(screen):
+    print ("""
 | | | | | |   |-|-|
 | | | | | |   |-|-|
 | | | | | |   |-|-|
