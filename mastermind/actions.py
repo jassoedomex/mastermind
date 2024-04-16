@@ -1,8 +1,11 @@
 def change_pins(color,location, board):
-    pass
+    print("color changed")
+
 def select(color,location, board):
-    pass
+    print("set color")
+
 def move (location, color, board):
-    pass
+    print("Next road")
+
 def correct(code, win, lose, board):
-    pass
+    print("Result:")
