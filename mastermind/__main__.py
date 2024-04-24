@@ -1,14 +1,5 @@
-from board import create_new_board, number_of_lines
-from board import number_of_holes
-from board import number_of_tries
-from board import code
-from board import you_won
-from board import you_lose
-from actions import change_pins
-from actions import select
-from actions import move
-from actions import correct
-from board import print_board
+from board import create_new_board, number_of_lines, number_of_holes, number_of_tries, code, you_won, you_lose, print_board
+from actions import change_pins, select, move, correct
 
 name = input("tell me your name")
 print("Nice to meet you", name)
