@@ -1,6 +1,6 @@
 def create_new_board():
-    board = [[" "]*3]*10
-    verification = [[" "]*3]*10
+    board = [[" " for _ in range(3)] for _ in range(10)]
+    verification = [[" " for _ in range(3)] for _ in range(10)]
     return board, verification
 
 def number_of_lines(quantity, color):
