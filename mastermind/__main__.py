@@ -6,19 +6,24 @@ print("Nice to meet you", name)
 with open('README.md', 'r') as f:
   print(f.read())
 board, verification = create_new_board()
+current_row = 0
 while True:
     print_board(board, verification)
     command = input ("Enter a command:")
     if command == "q":
       exit()
     elif command == "change color":
-       change_pins(None,None,None)
+       color = input("Select a color of pin")
+       location = input("Select the location of the pin")
+       location = int(location)
+       change_pins(color,[current_row, location],board)
     elif command == "color":
-       select(None,None,None)
+       select(None,None,board)
     elif command == "next":
-       move(None,None,None)
+       
+       current_row = move(None,None,board)
     elif command == "result":
-       select(None,None,None)
+       select(None,None,board)
     else :
       print("I did not understand this command.")        
 
