@@ -6,15 +6,16 @@ def select(color,location, board):
     print("set color")
 
 def move (board):
+    for i in range(0,10):
+        board[i]
     print("Next road")
 
-def correct(code, board):
-    verication_code = code
+def correct(code, current_row, board):
+    row = board[current_row]
+    verification_code = []
     for code_color, board_color in zip(code, row):
         if code_color == board_color:
-            colors = True
-            pint("you can mov eto the next row")
+            verification_code.append("c")
         else:
-            colors = False
-            print ("you need to try something new")
-    return verication_code
+            verification_code.append("i")
+    return verification_code
