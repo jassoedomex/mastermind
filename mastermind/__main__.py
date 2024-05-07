@@ -1,12 +1,6 @@
-from board import create_new_board, number_of_lines, number_of_holes, number_of_tries, code, you_won, you_lose, print_board
-from actions import change_pins, select, move, correct
+from board import create_new_board, number_of_holes, number_of_lines, number_of_tries, print_board, you_won, you_lose
+from actions import change_pins, move, correct, check_loser, check_winner
 from random import choices
-
-def check_win(verification_code):
-    return all(pin == "c" for pin in verification_code)
-
-def check_loss(current_row):
-    return current_row == 9
 
 name = input("tell me your name")
 print("Nice to meet you", name)
@@ -29,12 +23,12 @@ while True:
     elif command == "next":
        verification_code = correct(code, current_row, board)
        print(verification_code)
-       if check_win(verification_code):
+       if check_winner(verification_code):
             you_won(board)
             break
-       elif check_loss(current_row):
+       elif check_loser(current_row):
             you_lose(board)
             break
        current_row += 1
-else:
- print("I did not understand this command.")     
+    else:
+        print("I did not understand this command.")

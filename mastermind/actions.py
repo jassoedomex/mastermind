@@ -2,8 +2,6 @@ def change_pins(color,location, board):
     print("color changed")
     board[location[0]][location[1]]= color
 
-def select(color,location, board):
-    print("set color")
 
 def move (board):
     for i in range(0,10):
@@ -19,3 +17,10 @@ def correct(code, current_row, board):
         else:
             verification_code.append("i")
     return verification_code
+
+def check_winner(verification_code):
+    return verification_code == "ccc"
+
+def check_loser(current_row):
+    return current_row == 9
+#Took from chat GPT
