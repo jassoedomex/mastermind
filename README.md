@@ -12,12 +12,15 @@
             - "r" for red
             - "b" for blue
             - "g" for green
+  
 - "next" is used only when you already finish deciding the colors you want
       - Results:
         -A message is going to be printed for example, "C,I,I"
             - "C" stands for correct
             - "I" stands for incorrect
               -There is no order on how it is printed
-
+  
+- If you want to exit use the command "q"
+  
 If you don't use this commands, it is going to appear a meessage that says 'I did not understand this command'
 "
