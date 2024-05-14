@@ -4,7 +4,8 @@
 ### Welcome to Mastermind
 ### Mastermind, a two-player code-breaking game, tasks one player with creating a secret code while the other player attempts to guess it. The codebreaker receives feedback after each guess, aiming to deduce the correct sequence of colored pegs. With strategic thinking and deduction, players engage in a challenging yet enjoyable game, making it a timeless favorite for all ages.
 
-"The commands you are able to use are
+"The commands you are able to use are:
+
 - "change colors", this is used to select or change a color 
       -Results:
         - The rows you are able to select only are "0,1,2"
